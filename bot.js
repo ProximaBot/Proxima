@@ -39,26 +39,20 @@ client.on('ready', () => {
   }, 20000);
 
 });
-client.on('message', message => { 
+client.on('message', message => {
 if (message.content.startsWith("<@648213854798479380>")) {
     message.channel.send(new Discord.RichEmbed()
                       .setColor('#29752f')
                       .addField('Hi there! I\'m Proteus, a special helper for the Neptune server!','If you\'d to know more, DM <@381862688298631168> or use `n!help` for a list of commands.')
                       .setTimestamp()
-                      .setFooter(version + `| n!help`)
+                      .setFooter(version + ` | n!help`)
  )}
-else if (message.content.startsWith("n!")) {
-if (message.content.startsWith("n!help")) {
-message.channel.send(new Discord.RichEmbed()
-                      .setColor('#1634F0')  
+else if (message.content === ("n!help")) {
+  message.channel.send(new Discord.RichEmbed()
+                      .setColor('#1634F0')
                       .addField('Sorry, nothing yet!','Check back later when a new version is released!')
                       .setTimestamp()
-                      .setFooter(version)}
- else message.channel.send(new Discord.RichEmbed()
-                      .setColor('#1634F0')  
-                      .addField('Command not found','Use n!help!')
-                      .setTimestamp()
-                      .setFooter(version)
- )}
-}
+                      .setFooter(version + ` | n!help`)
+                    )}
+})
 client.login(process.env.BOT_TOKEN);
