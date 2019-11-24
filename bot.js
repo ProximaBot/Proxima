@@ -59,7 +59,6 @@ message.channel.send(new Discord.RichEmbed()
                       .addField('Command not found','Use n!help!')
                       .setTimestamp()
                       .setFooter(version)
-  )
  )}
 }
 client.login(process.env.BOT_TOKEN);
