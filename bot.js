@@ -61,3 +61,4 @@ message.channel.send(new Discord.RichEmbed()
                       .setFooter(version)
  )}
 }
+client.login(process.env.BOT_TOKEN);
