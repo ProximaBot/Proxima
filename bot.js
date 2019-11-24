@@ -43,9 +43,9 @@ client.on('message', message => {
 if (message.content.startsWith("<@648213854798479380>")) {
     message.channel.send(new Discord.RichEmbed()
                       .setColor('#29752f')
-                      .addField('Hi there! I\'m Proteus, a special helper for this server, Neptune!','If you\'d to know more, DM <@381862688298631168> or use `s!help` for a list of commands.')
+                      .addField('Hi there! I\'m Proteus, a special helper for the Neptune server!','If you\'d to know more, DM <@381862688298631168> or use `n!help` for a list of commands.')
                       .setTimestamp()
-                      .setFooter(version | n!help)
+                      .setFooter(version + `| n!help`)
  )}
 else if (message.content.startsWith("n!")) {
 if (message.content.startsWith("n!help")) {
