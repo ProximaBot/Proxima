@@ -83,9 +83,9 @@ client.on('message', message => {
       `<@!521458738981502987>`,
       `Hi! This was randomly picked out of all 44 messages. Please read.
 
-      You see, YouTube is going to die unless we contact the FTC. You probably already know, but COPPA is going to kill YouTube.
+You see, YouTube is going to die unless we contact the FTC. You probably already know, but COPPA is going to kill YouTube.
 
-      I won't go into details why, but please, look into it. If you feel that it's a big deal, please contact the FTC now: https://www.regulations.gov/document?D=FTC-2019-0054-0001`,
+I won't go into details why, but please, look into it. If you feel that it's a big deal, please contact the FTC now: https://www.regulations.gov/document?D=FTC-2019-0054-0001`,
       ];
      let response = messages[Math.floor(Math.random() * messages.length)];
     message.author.send(response);
