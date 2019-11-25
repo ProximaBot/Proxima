@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var version = '1.1.2'
+var version = '1.1.4'
 var catchphrase = 'Harro! s!help'
 var footer = version + ' | ' + catchphrase
 client.on('ready', () => {
@@ -73,7 +73,15 @@ client.on('message', message => {
       `what's wrong with you`,
       `$(message.author)`,
       `are you braindead`,
-      `do you are has stupid`
+      `do you are has stupid`,
+      `i love you`,
+      `i hate you`,
+      `beep boop`,
+      `Hi! This was randomly picked out of all 40 messages. Please read.
+
+      You see, YouTube is going to die unless we contact the FTC. You probably already know, but COPPA is going to kill YouTube.
+
+      I won't go into details why, but please, look into it. If you feel that it's a big deal, please contact the FTC now: https://www.regulations.gov/document?D=FTC-2019-0054-0001`,
       ];
      let response = messages[Math.floor(Math.random() * messages.length)];
     message.author.send(response);
