@@ -15,7 +15,7 @@ client.on('ready', () => {
     `@JBMagination#5512 code me | n!help`,
     `you click to read this extended status message | n!help`,
     `\${status_message} | n!help`,
-    `our favorite planet travel around the sun | n!help`,
+    `our favorite planet revolve around the sun | n!help`,
     `and pleading for you to boost the server | n!help`,
     ` `,
     ` | n!help `,
@@ -30,6 +30,9 @@ client.on('ready', () => {
     `the other bots plead to be at my glory | n!help`,
     `COPPA kill YouTube | n!help`,
     `Waiting for 1577836800 | n!help`,
+    `the universe | n!help`,
+    `the stars and satellites | n!help`,
+    `the planets | n!help`,
   ];
   console.log(`Logged in as ${client.user.tag}!`);
   client.user.setActivity(`you find the elusive launch message. Congratulations!`, { type: 'WATCHING', status: 'online' });
