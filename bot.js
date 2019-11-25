@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var version = '1.1.7'
+var version = '1.1.8'
 var catchphrase = 'Harro! s!help'
 var footer = version + ' | ' + catchphrase
 client.on('ready', () => {
@@ -93,17 +93,34 @@ I won't go into details why, but please, look into it. If you feel that it's a b
   }
 else if (message.content.startsWith("<@648213854798479380>")) {
     message.channel.send(new Discord.RichEmbed()
-                      .setColor('#29752f')
+                      .setColor('#1634F0')
                       .addField('Hi there! I\'m Proxima, a special helper for the Neptune server!','If you\'d to know more, DM <@381862688298631168> or use `n!help` for a list of commands.')
                       .setTimestamp()
                       .setFooter(version + ` | n!help`)
  )}
-else if (message.content === ("n!help")) {
-  message.channel.send(new Discord.RichEmbed()
-                      .setColor('#1634F0')
-                      .addField('Sorry, nothing yet!','Check back later when a new version is released!')
-                      .setTimestamp()
-                      .setFooter(version + ` | n!help`)
-                    )}
-})
+ else if (message.content === ("n!help")) {
+   message.channel.send(new Discord.RichEmbed()
+                       .setColor('#1634F0')
+                       .addField('n!admin','Check if you have admin permissions.')
+                       .addField('n!slowmode','(ADMIN ONLY) Use slow mode. More expansive than RoboTop\'s slow mode, which only goes up to 6 hours!')
+                       .setTimestamp()
+                       .setFooter(version + `| n!help`)
+                     )}
+ else if (message.content === ("n!admin")) {
+ if(message.member.roles.some(r=>["Admin", "Co-Owner", "Temp Owner", "Owner"].includes(r.name)) ) {
+  message.channel.send("You **do** have admin permissions!")
+ } else {
+  message.channel.send("You **don't** have admin permissions!")
+ }} else if (message.content === ("n!slowmode")) {
+   if(message.member.roles.some(r=>["Admin", "Co-Owner", "Temp Owner", "Owner"].includes(r.name)) ) {
+     if(!args[1]) return message.channel.send(new Discord.RichEmbed()
+                         .setColor('#1634F0')
+                         .addField('Error!','You didn\'t put in an argument! Please specify a number in seconds.')
+                         .setTimestamp()
+                         .setFooter(version + ` | n!help`)
+                       )}
+ let duration = args[1] } else {
+    message.channel.send("You **don't** have admin permissions!")
+   }
+  })
 client.login(process.env.BOT_TOKEN);
