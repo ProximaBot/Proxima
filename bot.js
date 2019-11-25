@@ -1,8 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var version = '1.1.8'
-var catchphrase = 'Harro! s!help'
-var footer = version + ' | ' + catchphrase
+var version = '1.1.9'
 client.on('ready', () => {
   let statuses = [
     `https://www.twitch.tv/jbmagination | n!help`,
