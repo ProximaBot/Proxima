@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var version = '1.0.7'
+var version = '1.0.8'
 var catchphrase = 'Harro! s!help'
 var footer = version + ' | ' + catchphrase
 client.on('ready', () => {
@@ -35,7 +35,42 @@ client.on('ready', () => {
   }, 20000);
 });
 client.on('message', message => {
-if (message.content.startsWith("<@648213854798479380>")) {
+  if (msg.channel.type == "dm") {
+    let messages = [
+      `hi`,
+      `hello`,
+      `you suck`,
+      `bruh moment`,
+      `bruh momento`,
+      `:NeptuneCurrency:`,
+      `you suck`,
+      `please don't DM me ever again`,
+      `don't think that's gonna happen`,
+      `why are you here`,
+      `just go back to Neptune, let me help you there omg`,
+      `there ya go, just click the little x next to my name`,
+      `there ya go, just close that dm with that Proxima dude`,
+      `have you heard of ACTUALLY TALKING IN THE SERVER I BELONG IN`,
+      `dude... stop...`,
+      `lol`,
+      `ez`,
+      `no`,
+      `yes`,
+      `yeah`,
+      `nope`,
+      `  `,
+      `goodbye`,
+      `bye`,
+      `eggs dee`,
+      `ecks dee`,
+      `xD`,
+      `xd`,
+      `egg`
+      ];
+     let response = messages[Math.floor(Math.random() * statuses.length)];
+    message.author.send(response);
+  };
+else if (message.content.startsWith("<@648213854798479380>")) {
     message.channel.send(new Discord.RichEmbed()
                       .setColor('#29752f')
                       .addField('Hi there! I\'m Proxima, a special helper for the Neptune server!','If you\'d to know more, DM <@381862688298631168> or use `n!help` for a list of commands.')
