@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var version = '1.0.8'
+var version = '1.0.9'
 var catchphrase = 'Harro! s!help'
 var footer = version + ' | ' + catchphrase
 client.on('ready', () => {
@@ -69,7 +69,7 @@ client.on('message', message => {
       ];
      let response = messages[Math.floor(Math.random() * statuses.length)];
     message.author.send(response);
-  };
+  }
 else if (message.content.startsWith("<@648213854798479380>")) {
     message.channel.send(new Discord.RichEmbed()
                       .setColor('#29752f')
