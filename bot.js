@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var version = '1.2.0'
+var version = '1.2.1'
 client.on('ready', () => {
   let statuses = [
     `https://www.twitch.tv/jbmagination | n!help`,
@@ -111,13 +111,13 @@ else if (message.content.startsWith("<@648213854798479380>")) {
   message.channel.send("You **don't** have admin permissions!")
 } else if (message.content === ("n!slowmode")) {
    if(message.member.roles.some(r=>["Admin", "Co-Owner", "Temp Owner", "Owner"].includes(r.name)) ) {
+     let duration = args[1]
      if(!args[1]) return message.channel.send(new Discord.RichEmbed()
                          .setColor('#1634F0')
                          .addField('Error!','You didn\'t put in an argument! Please specify a number in seconds.')
                          .setTimestamp()
                          .setFooter(version + ` | n!help`)
-                       )}
- let duration = args[1] else
+                       )} else
     message.channel.send("You **don't** have admin permissions!")
    }
   })
