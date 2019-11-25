@@ -35,7 +35,7 @@ client.on('ready', () => {
   }, 20000);
 });
 client.on('message', message => {
-  if (msg.channel.type == "dm") {
+  if (message.channel.type == "dm") {
     let messages = [
       `hi`,
       `hello`,
