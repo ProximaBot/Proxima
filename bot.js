@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var version = '1.1.1'
+var version = '1.1.2'
 var catchphrase = 'Harro! s!help'
 var footer = version + ' | ' + catchphrase
 client.on('ready', () => {
@@ -58,7 +58,7 @@ client.on('message', message => {
       `yes`,
       `yeah`,
       `nope`,
-      `  `,
+      `_ _`,
       `goodbye`,
       `bye`,
       `eggs dee`,
