@@ -37,7 +37,6 @@ client.on('ready', () => {
     let status = statuses[Math.floor(Math.random() * statuses.length)];
     client.user.setActivity(status, { type: 'WATCHING', status: 'online' });
   }, 20000);
-  if status
 });
 client.on('message', message => {
 if (message.content.startsWith("<@648213854798479380>")) {
