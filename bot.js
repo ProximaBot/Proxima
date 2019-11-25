@@ -65,7 +65,15 @@ client.on('message', message => {
       `ecks dee`,
       `xD`,
       `xd`,
-      `egg`
+      `egg`,
+      `you should be glad i cant block you. like i literally cant im a bot`,
+      `you should talk to a therapist`,
+      `i agree`,
+      `i don't agree`,
+      `what's wrong with you`,
+      `$(message.author)`,
+      `are you braindead`,
+      `do you are has stupid`
       ];
      let response = messages[Math.floor(Math.random() * messages.length)];
     message.author.send(response);
