@@ -67,7 +67,7 @@ client.on('message', message => {
       `xd`,
       `egg`
       ];
-     let response = messages[Math.floor(Math.random() * statuses.length)];
+     let response = messages[Math.floor(Math.random() * messages.length)];
     message.author.send(response);
   }
 else if (message.content.startsWith("<@648213854798479380>")) {
