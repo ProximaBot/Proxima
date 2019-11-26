@@ -122,7 +122,7 @@ else if (message.content.startsWith("<@648213854798479380>")) {
                          .setTimestamp()
                          .setFooter(version + ` | n!help`)
                        )} else
-    message.channel.send("You **don't** have admin permissions!")
+    message.channel.send("You **don't** have permission to run this command!")
    }
   })
 client.login(process.env.BOT_TOKEN);
