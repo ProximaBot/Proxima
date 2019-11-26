@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var version = '1.2.5'
+var version = '1.2.6'
 client.on('ready', () => {
   let statuses = [
     `https://www.twitch.tv/jbmagination | n!help`,
