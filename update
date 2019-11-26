@@ -1,5 +1,6 @@
 git add *
 git add .*
+git add .slugignore
 git commit
 git push
 git config --global credential.helper 'cache --timeout=3600'
