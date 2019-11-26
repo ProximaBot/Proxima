@@ -5,7 +5,7 @@ client.on('ready', () => {
   let statuses = [
     `https://www.twitch.tv/jbmagination | n!help`,
     `a small ${client.users.size} users! | n!help`,
-    `just ${client.guilds.size} server! | n!help`,
+    `just ${client.guilds.size} servers! | n!help`,
     `you type in this server | n!help`,
     `the solar system | n!help`,
     `you read these status messages | n!help`,
