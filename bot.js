@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var version = '1.2.2'
+var version = '1.2.3'
 client.on('ready', () => {
   let statuses = [
     `https://www.twitch.tv/jbmagination | n!help`,
@@ -103,7 +103,7 @@ else if (message.content.startsWith("<@648213854798479380>")) {
                        .addField('n!admin','Check if you have admin permissions.')
                        .addField('n!slowmode [wip]','(ADMIN ONLY) Use slow mode. More expansive than RoboTop\'s slow mode, which only goes up to 6 hours!')
                        .setTimestamp()
-                       .setFooter(version + `| n!help`)
+                       .setFooter(version + ` | n!help`)
                      )}
   else if (message.content === ("n!avatar")) {
     message.reply(message.author.avatarURL);
