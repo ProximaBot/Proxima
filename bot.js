@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var version = '1.2.1'
+var version = '1.2.2'
 client.on('ready', () => {
   let statuses = [
     `https://www.twitch.tv/jbmagination | n!help`,
@@ -93,6 +93,7 @@ else if (message.content.startsWith("<@648213854798479380>")) {
     message.channel.send(new Discord.RichEmbed()
                       .setColor('#1634F0')
                       .addField('Hi there! I\'m Proxima, a special helper for the Neptune server!','If you\'d to know more, DM <@381862688298631168> or use `n!help` for a list of commands.')
+                      .addField('Oh, also...','You might wanna refrain from mentioning me. Mee6 probably just warned you. Be careful, ${message.author}!')
                       .setTimestamp()
                       .setFooter(version + ` | n!help`)
  )}
@@ -100,10 +101,13 @@ else if (message.content.startsWith("<@648213854798479380>")) {
    message.channel.send(new Discord.RichEmbed()
                        .setColor('#1634F0')
                        .addField('n!admin','Check if you have admin permissions.')
-                       .addField('n!slowmode','(ADMIN ONLY) Use slow mode. More expansive than RoboTop\'s slow mode, which only goes up to 6 hours!')
+                       .addField('n!slowmode [wip]','(ADMIN ONLY) Use slow mode. More expansive than RoboTop\'s slow mode, which only goes up to 6 hours!')
                        .setTimestamp()
                        .setFooter(version + `| n!help`)
                      )}
+  else if (message.content === ("n!avatar")) {
+    message.reply(message.author.avatarURL);
+  }
  else if (message.content === ("n!admin")) {
  if(message.member.roles.some(r=>["Admin", "Co-Owner", "Temp Owner", "Owner"].includes(r.name)) ) {
   message.channel.send("You **do** have admin permissions!")
