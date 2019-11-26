@@ -41,7 +41,7 @@ client.on('message', message => {
       `you suck`,
       `bruh moment`,
       `bruh momento`,
-      `:NeptuneCurrency:`,
+      `<:NeptuneCurrency:641150181655445532>`,
       `you suck`,
       `please don't DM me ever again`,
       `don't think that's gonna happen`,
@@ -101,7 +101,7 @@ else if (message.content.startsWith("<@648213854798479380>")) {
    message.channel.send(new Discord.RichEmbed()
                        .setColor('#1634F0')
                        .addField('n!admin','Check if you have admin permissions.')
-                       .addField('n!slowmode [wip]','(ADMIN ONLY) Use slow mode. More expansive than RoboTop\'s slow mode, which only goes up to 6 hours!')
+                       .addField('n!avatar','Gives you a link and display of your avatar.')
                        .setTimestamp()
                        .setFooter(version + ` | n!help`)
                      )}
