@@ -6,6 +6,7 @@ client.on('ready', () => {
     `https://www.twitch.tv/jbmagination | n!help`,
     `a small ${client.users.size} users! | n!help`,
     `just 1 server! | n!help`,
+    `nothing | n!help`,
     `you type in this server | n!help`,
     `the solar system | n!help`,
     `you read these status messages | n!help`,
