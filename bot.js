@@ -95,7 +95,6 @@ else if (message.content.startsWith("<@648213854798479380>")) {
     message.channel.send(new Discord.RichEmbed()
                       .setColor('#1634F0')
                       .addField('Hi there! I\'m Proxima, a special helper for the Neptune server!','If you\'d to know more, DM <@381862688298631168> or use `n!help` for a list of commands!')
-                      .addField('Oh, also...','You might wanna refrain from mentioning me. Mee6 probably just warned you. Be careful, ' + `${message.author}` + `!`) 
                       .setTimestamp()
                       .setFooter(version + ` | n!help`)
  )}
