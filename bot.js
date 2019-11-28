@@ -42,7 +42,7 @@ client.on('message', message => {
       `you suck`,
       `bruh moment`,
       `bruh momento`,
-      `<:fluashed:649479820622692373>`,
+      `<:fluashed:649481720042618890>`,
       `<:NeptuneCurrency:641150181655445532>`,
       `you suck`,
       `please don't DM me ever again`,
