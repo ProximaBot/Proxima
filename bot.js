@@ -50,7 +50,7 @@ client.on('message', message => {
       `large egg`,
       `please dont dm me im scared`,
       `im scared`,
-      `<:BOT:629030492838166538>`,
+      `<:bot:649884329174106122>`,
       `bruh moment`,
       `bruh momento`,
       `<:fluashed:642193080295882773>`,
