@@ -61,7 +61,7 @@ client.on('message', message => {
       `affirmative`,
       `help`,
       `i dont speak broke`,
-      `¯\_(ツ)_/¯`,
+      `¯\\_(ツ)_/¯`,
       `why are you talking to a robot`,
       `did i mention that im vegan?`,
       `im scared`,
