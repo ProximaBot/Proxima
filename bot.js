@@ -5,6 +5,10 @@ client.on('ready', () => {
   let statuses = [
     `https://www.twitch.tv/jbmagination | n!help`,
     `a small ${client.users.size} users! | n!help`,
+    `all the typos in this server | n!help `,
+    `to make sure you\'re having a good day | n!help`,
+    `the Cacti | n!help`,
+    `or Listening to Rocky\'s music | n!help`,
     `everyone ask who\'s Joe | n!help`,
     `everyone say Joe Mama | n!help`,
     `just 1 server! | n!help`,
