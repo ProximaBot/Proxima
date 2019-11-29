@@ -29,6 +29,7 @@ client.on('ready', () => {
     `you | n!help `,
     `the other bots plead to be at my glory | n!help`,
     `COPPA kill YouTube | n!help`,
+    `the clock, waiting for 1645568542 | n!help`,
     `the clock, waiting for 1577836800 | n!help`,
     `the universe | n!help`,
     `the stars and satellites | n!help`,
