@@ -110,7 +110,7 @@ client.on('message', message => {
       `joe mama`,
       `<@!381862688298631168>`,
       `<@!521458738981502987>`,
-      `Hi! This was randomly picked out of all 44 messages. Please read.
+      `Hi! This was randomly picked out of all 64 messages. Please read.
 
 You see, YouTube is going to die unless we contact the FTC. You probably already know, but COPPA is going to kill YouTube.
 
