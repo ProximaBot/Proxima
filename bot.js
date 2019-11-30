@@ -26,6 +26,7 @@ client.on('ready', () => {
     `our favorite planet revolve around the sun | n!help`,
     `and pleading for you to boost the server | n!help`,
     ` `,
+    `Google Chrome`,
     ` | n!help `,
     `you | n!help `,
     `the other bots plead to be at my glory | n!help`,
@@ -48,6 +49,7 @@ client.on('message', message => {
   else if (message.channel.type == "dm") {
     let messages = [
       `hi`,
+      `hey this isn't google`,
       `hello`,
       `you suck`,
       `large egg`,
