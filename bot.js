@@ -5,7 +5,7 @@ client.on('ready', () => {
   let statuses = [
     `https://www.twitch.tv/jbmagination | n!help`,
     `a small ${client.users.size} users! | n!help`,
-    `all i want for christmas is custom status | n!help`,
+    `all I want for christmas is a custom status | n!help`,
     `you read this for some reason super dooper ultra extra super much extended status message | n!help`,
     `all the typos in this server | n!help `,
     `to make sure you\'re having a good day | n!help`,
