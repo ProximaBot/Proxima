@@ -19,6 +19,7 @@ client.on('ready', () => {
     `the solar system | n!help`,
     `you read these status messages | n!help`,
     `Discord | n!help`,
+    `@egg#1000 add random stuff to my code | n!help`,
     `@JBMagination#5512 code me | n!help`,
     `you click to read this extended status message | n!help`,
     `\${status_message} | n!help`,
