@@ -142,14 +142,14 @@ I won't go into details why, but please, look into it. If you feel that it's a b
   }
 else if (message.content.startsWith("<@648213854798479380>")) {
     message.channel.send(new Discord.RichEmbed()
-                      .setColor('#1634F0')
+                      .setColor('#8ab9f8')
                       .addField('Hi there! I\'m Proxima, a special helper for the Neptune server!','If you\'d to know more, DM <@381862688298631168> or use `n!help` for a list of commands!')
                       .setTimestamp()
                       .setFooter(version + ` | n!help`)
  )}
  else if (message.content === ("n!help")) {
    message.channel.send(new Discord.RichEmbed()
-                       .setColor('#1634F0')
+                       .setColor('#8ab9f8')
                        .addField('n!admin','Check if you have admin permissions.')
                        .addField('n!avatar','Gives you a link and display of your avatar.')
                        .setTimestamp()
