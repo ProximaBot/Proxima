@@ -12,8 +12,6 @@ client.on('ready', () => {
     `to make sure you\'re having a good day | n!help`,
     `the Cacti | n!help`,
     `large egg | n!help`,
-    `everyone ask who\'s Joe | n!help`,
-    `everyone say Joe Mama | n!help`,
     `just 1 server! | n!help`,
     `nothing | n!help`,
     `you type in this server | n!help`,
