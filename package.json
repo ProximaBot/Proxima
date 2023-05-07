@@ -16,7 +16,7 @@
     "libsodium-wrappers": "^0.7.6",
     "lzma-native": "^5.0.0",
     "node-opus": "^0.3.1",
-    "pm2": "^4.2.0"
+    "pm2": "^4.5.6"
   },
   "engines": {
     "node": "13.2.0"
